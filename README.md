@@ -36,5 +36,14 @@ Question 4. In your README to the best of your knowledge please explain why we a
 Answer 4.
 Because JS reads the code from top to bottom, hierarchically.
 ```
+```
+Question 5. In your README to the best of your knowledge please explain the difference between feature and unit test
+
+Answer 5.
+
+Unit test => is a test you run for a specific piece of code. Unit testing is implemented when we want to test the smallest piece of code to check whether it's fit for use.
+
+Feature test (or acceptance test, as it's also called) => is much broader testing of the scenarios that a user would face while interacting with our app. It's much more detailed and has a happy path(when the user does exactly what we want him to do and follows the instructions to the letter. Which, obvs never happens!) and a sad path (this where the user is being a bit of a rebel and refuses to even spell their names right)
+```
 
 

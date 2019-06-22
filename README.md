@@ -30,5 +30,11 @@ Example: 'Dash' === 'Dash' (both are strings and have the same value)
 == is more or less equal
 Example: 9 == '9'
 ```
+```
+Question 4. In your README to the best of your knowledge please explain why we are moving (number % 5 === 0) to the top?
+
+Answer 4.
+Because JS reads the code from top to bottom, hierarchically.
+```
 
 

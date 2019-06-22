@@ -20,5 +20,15 @@ Question 2. In your README to the best of your knowledge please explain why we a
 Answer 2.
 Because we want a new instance of fizzbuzz to run through each test, instead of having the tests run through the same instance every time.
 ```
+```
+Question 3. In your README to the best of your knowledge please explain the difference between using === and == in JS?
+
+=== demands complete equality in type and value of what we are passing
+Example: 'Dash' === 'Dash' (both are strings and have the same value)
+9 === 9 (both are integers and have the same value)
+
+== is more or less equal
+Example: 9 == '9'
+```
 
 

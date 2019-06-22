@@ -69,5 +69,20 @@ I am taking advantage of the asynchronous property of the programming language, 
 Await expression in the async function pauses the execution of the function and waits for the passed
 promise's resolution, and then resumes the async function's execution and returns the resolved value. 
 ```
+```
+Question 7. In your README to the best of your knowledge please explain what expectations in the context of testing are:
+
+it('clicking on the "Check" button', async () => {
+    await browser.fillIn("input[id='value']", { with:  "3" })
+    await browser.clickOnButton("input[value='Check']")
+    let content = await browser.getContent("[id='display_answer']")
+    expect(content).to.eql('Fizz');
+})
+
+Answer 7.
+It is expected that the user will click on the "Check" button and type 3.
+Upon the click of the button the program will get the content of the answer and display it.
+The expected content value has to be equal to "Fizz"
+```
 
 

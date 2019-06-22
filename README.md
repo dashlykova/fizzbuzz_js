@@ -84,5 +84,26 @@ It is expected that the user will click on the "Check" button and type 3.
 Upon the click of the button the program will get the content of the answer and display it.
 The expected content value has to be equal to "Fizz"
 ```
+```
+Question 8. In your README to the best of your knowledge please write a line to line explanation of what is happening in this code
 
+<script src="js/fizzbuzz.js"></script>  //=> Connecting JS file in src/js folder to our HTML file 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { //=> Adding the event listener to our web 
+        apllication. Event listener pays attention to whatever event occurs. We are connecting our JS code to the DOM, which allows us to manipulate the HTML.
+
+            let button = document.getElementById('button') => Creating a variable called "button" and connecting it to an HTML element with an ID name "button"
+
+            let displayDiv = document.getElementById('display_answer') => when clicking the button, an answe should be displayed
+
+            button.addEventListener('click', () =>{ => Upon the click
+                let value = document.getElementById('value').value => get the value of the typed in number
+                let fizzBuzz = new FizzBuzz => Create a new instance of FizzBuzz and put it in to variable fizzBuzz
+                let result = fizzBuzz.check(value) => checking the value of the result
+                displayDiv.innerHTML = result; => displaying the result
+            })
+        })
+    </script>
+```
 

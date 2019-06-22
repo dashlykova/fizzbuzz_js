@@ -45,5 +45,29 @@ Unit test => is a test you run for a specific piece of code. Unit testing is imp
 
 Feature test (or acceptance test, as it's also called) => is much broader testing of the scenarios that a user would face while interacting with our app. It's much more detailed and has a happy path(when the user does exactly what we want him to do and follows the instructions to the letter. Which, obvs never happens!) and a sad path (this where the user is being a bit of a rebel and refuses to even spell their names right)
 ```
+```
+Question 6. In your README to the best of your knowledge please explain what this following code does
+
+describe('User can input a value and get FizzBuzz results', () => {
+    before(async () => {
+        await  browser.init()
+        await  browser.visitPage('http://localhost:8080/')
+    });
+
+    beforeEach(async () => {
+        await  browser.page.reload();
+    })
+
+    after(async ()=> {
+        await  browser.close();
+    })
+})
+
+Answer 6.
+I am telling/describing the program what I want it to do. In this case, I am telling it that I want a user(person) to give me/write a number (value) and get the result for our FizzBuzz game. 
+I am taking advantage of the asynchronous property of the programming language, which is based on a promise, so that all of the commands that I pass won't have to run simultaniously.
+Await expression in the async function pauses the execution of the function and waits for the passed
+promise's resolution, and then resumes the async function's execution and returns the resolved value. 
+```
 
 

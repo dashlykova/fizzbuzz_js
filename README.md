@@ -106,4 +106,9 @@ Question 8. In your README to the best of your knowledge please write a line to 
         })
     </script>
 ```
+```
+Question 9. In your README to the best of your knowledge please explain what a CDN (Content Delivery Network) is?
 
+Answer 9.
+A CDN is a system of servers that deliver pages and web content to users, based on geographic locations of the users.
+```

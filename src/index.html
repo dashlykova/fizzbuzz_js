@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Puppeteer Mocha Scaffold</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="  https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <title>Address book</title>
 </head>
+
 <body>
-    <input type="text" id="value">
-    <input type="submit" value="Check" id="button">
-    <div id="display_answer"></div>
+    <h1 class="ui red large centered header">
+        <i class="chess board icon"></i>
+        <div class="content">
+            Let's FizzBuzz!
+        </div>
+    </h1>
+    <div class="ui icon input">
+        <i class="keyboard outline icon"></i>
+        <input type="text" id="value" placeholder="Type your number here...">
+    </div>
+    <input class="ui inverted red button" value="Is it Fizz, Buzz or FizzBuzz?" id="button">
+    <div class="ui compact green message" id="display_answer"></div>
 </body>
 <script src="js/fizzbuzz.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            let button = document.getElementById('button')
-            let displayDiv = document.getElementById('display_answer')
-            button.addEventListener('click', () =>{
-                let value = document.getElementById('value').value
-                let fizzBuzz = new FizzBuzz
-                let result = fizzBuzz.check(value)
-                displayDiv.innerHTML = result;
-            })
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let button = document.getElementById('button')
+        let displayDiv = document.getElementById('display_answer')
+        button.addEventListener('click', () => {
+            let value = document.getElementById('value').value
+            let fizzBuzz = new FizzBuzz
+            let result = fizzBuzz.check(value)
+            displayDiv.innerHTML = result;
         })
-    </script>
+    })
+</script>
+
 </html>
